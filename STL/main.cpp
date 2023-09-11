@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 #include<array>
 #include<vector>
 //using namespace std;
@@ -19,7 +19,7 @@ void main()
 {
 	setlocale(LC_ALL, "");
 #ifdef STL_ARRAY
-	//array-контейнер который хранит данные в виде статического массива
+	//array-РєРѕРЅС‚РµР№РЅРµСЂ РєРѕС‚РѕСЂС‹Р№ С…СЂР°РЅРёС‚ РґР°РЅРЅС‹Рµ РІ РІРёРґРµ СЃС‚Р°С‚РёС‡РµСЃРєРѕРіРѕ РјР°СЃСЃРёРІР°
 	const int N = 5;
 	std::array<int, N> arr = { 3,5,8,13,21 };
 	for (int i = 0; i < arr.size(); i++)
@@ -29,7 +29,7 @@ void main()
 	cout << endl;
 #endif // STL_ARRAY
 #ifdef STL_VECTOR
-	//VECTOR-контейнер который хранит данные в виде динамического массива
+	//VECTOR-РєРѕРЅС‚РµР№РЅРµСЂ РєРѕС‚РѕСЂС‹Р№ С…СЂР°РЅРёС‚ РґР°РЅРЅС‹Рµ РІ РІРёРґРµ РґРёРЅР°РјРёС‡РµСЃРєРѕРіРѕ РјР°СЃСЃРёРІР°
 	std::vector<int> vec = {0,1,1,2, 3,5,8,13,21,31 };
 	
 	try
@@ -51,7 +51,7 @@ void main()
 	//vec.resize(18);
 	vec.reserve(120);
 	vec.shrink_to_fit();
-	vec.insert(vec.begin()+8, vec.begin() + 3, vec.begin() + 7);//вставка элементов, в томчисле других массивов
+	vec.insert(vec.begin()+8, vec.begin() + 3, vec.begin() + 7);//РІСЃС‚Р°РІРєР° СЌР»РµРјРµРЅС‚РѕРІ, РІ С‚РѕРјС‡РёСЃР»Рµ РґСЂСѓРіРёС… РјР°СЃСЃРёРІРѕРІ
 	vec.insert(vec.begin() + 5, { 1024,2048,3072,4096 });
 	for (int i = 0; i < vec.size(); i++)
 	{
@@ -73,9 +73,9 @@ void main()
 	int index;
 	int count;
 	int value;
-	cout << "Введите индекс добавляемого значения: "; cin >> index;
-	cout << "Введите колличество добавляемых значений: "; cin >> count;
-	cout << "Введите добавляемое значения: "; cin >> value;
+	cout << "Р’РІРµРґРёС‚Рµ РёРЅРґРµРєСЃ РґРѕР±Р°РІР»СЏРµРјРѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ: "; cin >> index;
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»Р»РёС‡РµСЃС‚РІРѕ РґРѕР±Р°РІР»СЏРµРјС‹С… Р·РЅР°С‡РµРЅРёР№: "; cin >> count;
+	cout << "Р’РІРµРґРёС‚Рµ РґРѕР±Р°РІР»СЏРµРјРѕРµ Р·РЅР°С‡РµРЅРёСЏ: "; cin >> value;
 	cout << endl;
 	//std::vector<int>::iterator it;
 	//it = vec.begin()+index;
